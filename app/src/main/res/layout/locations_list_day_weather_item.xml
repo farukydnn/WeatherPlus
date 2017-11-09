@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/city_day_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WED" />
+
+    <ImageView
+        android:id="@+id/city_day_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_01d_24dp" />
+
+    <TextView
+        android:id="@+id/city_day_temprature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20°C 10°C" />
+
+</LinearLayout>

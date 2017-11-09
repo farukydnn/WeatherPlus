@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/cardview_corner_radius"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/cardview_content_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_temprature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 °C"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/item_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/item_temprature"
+            android:text="Clear sky"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/item_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_description"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:text="@string/toolbar_wind" />
+
+        <TextView
+            android:id="@+id/item_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_wind"
+            android:text="@string/toolbar_pressure" />
+
+        <TextView
+            android:id="@+id/item_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_pressure"
+            android:text="@string/toolbar_humidity" />
+
+        <ImageView
+            android:id="@+id/item_day_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/img_01d_64dp" />
+
+        <TextView
+            android:id="@+id/item_forecast_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="00:00"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

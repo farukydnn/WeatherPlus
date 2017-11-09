@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Weather Plus</string>
+    <string name="locations">Locations</string>
+    <string name="toolbar_wind">Wind: %1$s %2$s</string>
+    <string name="toolbar_pressure">Pressure: %1$s %2$s</string>
+    <string name="toolbar_temprature" translatable="false">%1$s %2$s</string>
+    <string name="toolbar_humidity">Humidity: %1$s%%</string>
+    <string name="toolbar_sunrise">Sunrise: %1$s</string>
+    <string name="toolbar_sunset">Sunset: %1$s</string>
+    <string name="toolbar_last_update">Last Update\n%1$s</string>
+    <string name="meters_per_second" translatable="false">m/s</string>
+    <string name="OK">OK</string>
+    <string name="location_adding">Location adding…</string>
+    <string name="location_not_found">Location not found!</string>
+    <string name="connection_timed_out">Connection timed out.</string>
+    <string name="no_internet">No connection!</string>
+    <string name="server_not_responding">Server did not respond.</string>
+    <string name="city_remeoved">%1$s removed.</string>
+    <string name="UNDO">UNDO</string>
+    <string name="no_locations_added">No locations added.</string>
+    <string name="location_request_title">Location Permission</string>
+    <string name="location_request_message">This app needs location permission to show the nearest weather forecast to your location.</string>
+</resources>

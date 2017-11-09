@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.farukydnn.weatherplus.ui.dashboard.DayDetailsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:paddingBottom="@dimen/padding_16dp"
+                android:paddingEnd="@dimen/padding_16dp"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:paddingRight="@dimen/padding_16dp"
+                android:paddingStart="@dimen/padding_16dp">
+
+                <TextView
+                    android:id="@+id/toolbar_temprature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24 °C"
+                    android:textSize="34sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/toolbar_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar_temprature"
+                    android:text="Clear sky"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/toolbar_wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar_description"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:text="@string/toolbar_wind" />
+
+                <TextView
+                    android:id="@+id/toolbar_pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar_wind"
+                    android:text="@string/toolbar_pressure" />
+
+                <TextView
+                    android:id="@+id/toolbar_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar_pressure"
+                    android:text="@string/toolbar_humidity" />
+
+                <TextView
+                    android:id="@+id/toolbar_sunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar_humidity"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:text="@string/toolbar_sunrise" />
+
+                <TextView
+                    android:id="@+id/toolbar_sunset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar_sunrise"
+                    android:text="@string/toolbar_sunset" />
+
+                <ImageView
+                    android:id="@+id/toolbar_day_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/img_01d_64dp"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/toolbar_last_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="@string/toolbar_last_update" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:layout_collapseMode="pin"
+                app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

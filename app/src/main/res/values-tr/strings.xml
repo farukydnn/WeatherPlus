@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather Plus</string>
+    <string name="city_remeoved">%1$s silindi.</string>
+    <string name="connection_timed_out">Bağlantı zaman aşımına uğradı.</string>
+    <string name="location_adding">Konum ekleniyor…</string>
+    <string name="location_not_found">Konum bulunamadı!</string>
+    <string name="locations">Konumlar</string>
+    <string name="no_internet">Bağlantı yok!</string>
+    <string name="OK">TAMAM</string>
+    <string name="server_not_responding">Sunucu cevap vermedi.</string>
+    <string name="toolbar_humidity">Nem: %%%1$s</string>
+    <string name="toolbar_last_update">Son Güncelleme\n%1$s</string>
+    <string name="toolbar_pressure">Basınç: %1$s %2$s</string>
+    <string name="toolbar_sunrise">Gün doğumu: %1$s</string>
+    <string name="toolbar_sunset">Gün batımı: %1$s</string>
+    <string name="toolbar_wind">Rüzgar: %1$s %2$s</string>
+    <string name="UNDO">GERİ AL</string>
+    <string name="location_request_message">Bu uygulama bulunduğunuz yere en yakın hava tahminini göstermek için konum iznine ihtiyaç duyar.</string>
+    <string name="location_request_title">Konum İzni</string>
+    <string name="no_locations_added">Konum eklenmedi.</string>
+</resources>
